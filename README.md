@@ -2,7 +2,7 @@
 
 This script gives your players that do the EMS job a activity to do when calls are slow! This will allow them to make some extra cash without the constant back to back AI Calls!
 
-# Demo: 
+# Demo: https://youtu.be/Zd-6ba5kXLQ
 
 # Requirements
 - ESX LEGACY OR QBCORE
