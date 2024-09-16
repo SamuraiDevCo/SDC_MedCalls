@@ -189,6 +189,21 @@ function StartCall()
     end
 end
 
+function EndCall(callid)
+    if allMedicalCalls[callid] then
+        if allMedicalCalls[callid].Ped then
+            local daped = NetworkGetEntityFromNetworkId(allMedicalCalls[callid].Ped)
+
+            if daped and DoesEntityExist(daped) then
+                DeleteEntity(daped)
+            end
+        end
+        
+        table.remove(allMedicalCalls, callid)
+        TriggerClientEvent("SDMC:Client:UpdateCalls", -1, allMedicalCalls)
+    end
+end
+
 RegisterServerEvent("SDMC:Server:SpawnCallPed")
 AddEventHandler("SDMC:Server:SpawnCallPed", function(call)
     local done = false
