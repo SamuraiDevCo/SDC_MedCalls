@@ -502,7 +502,7 @@ Citizen.CreateThread(function()
 								DetachEntity(hasStretcher, true, false)
 								stretcherinback = hasStretcher
 								hasStretcher = nil
-								AttachEntityToEntity(stretcherinback, closestVeh, 0, 0.0, -2.0, 0.5, 0.0, 0.0, 0.0, true, false, false, true, 1, true)
+								AttachEntityToEntity(stretcherinback, closestVeh, 0, vehConversion[tostring(GetEntityModel(closestVeh))].StretcherVehOffset[1].x, vehConversion[tostring(GetEntityModel(closestVeh))].StretcherVehOffset[1].y, vehConversion[tostring(GetEntityModel(closestVeh))].StretcherVehOffset[1].z, 0.0, 0.0, 0.0, true, false, false, true, 1, true)
 								local minDist = 5000
 								local theHospital = 0
 								for i=1, #SDC.HospitalDropOff do
@@ -582,7 +582,7 @@ Citizen.CreateThread(function()
 								DetachEntity(hasStretcher, true, false)
 								stretcherinback = hasStretcher
 								hasStretcher = nil
-								AttachEntityToEntity(stretcherinback, closestVeh, 0, 0.0, -2.0, 0.5, 0.0, 0.0, 0.0, true, false, false, true, 1, true)
+								AttachEntityToEntity(stretcherinback, closestVeh, 0, vehConversion[tostring(GetEntityModel(closestVeh))].StretcherVehOffset[1].x, vehConversion[tostring(GetEntityModel(closestVeh))].StretcherVehOffset[1].y, vehConversion[tostring(GetEntityModel(closestVeh))].StretcherVehOffset[1].z, 0.0, 0.0, 0.0, true, false, false, true, 1, true)
 								local minDist = 5000
 								local theHospital = 0
 								repeat

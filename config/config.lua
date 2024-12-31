@@ -45,7 +45,7 @@ SDC.Icons = { --All icon configs (if you want them on set enabled to true)
 -------------------------------Stretcher Configs---------------------------------
 ---------------------------------------------------------------------------------
 SDC.VehiclesWithStretchers = { --All Whitelisted Vehicles for pulling out stretchers 
-    ["ambulance"] = {GrabOffset = {vec3(0.0, -4.0, 0.0)}}
+    ["ambulance"] = {GrabOffset = {vec3(0.0, -4.0, 0.0)}, StretcherVehOffset = {vec3(0.0, -2.0, 0.5)}}
 }
 SDC.StretcherModel = "prop_stretcher" --The stretcher prop used in the resources
 SDC.StretcherSettings = { --The offsets for the corresponding stretcher model
