@@ -13,14 +13,14 @@ function GetCurrentJob()
         if PlayerData and PlayerData.job and PlayerData.job.name then
             return PlayerData.job.name
         else
-            return nil
+            return false
         end
     elseif SDC.Framework == "esx" then
         local PlayerData = ESX.GetPlayerData()
         if PlayerData and PlayerData.job and PlayerData.job.name then
             return PlayerData.job.name
         else
-            return nil
+            return false
         end
     end
 end
